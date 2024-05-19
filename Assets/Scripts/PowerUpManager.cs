@@ -5,6 +5,7 @@ using UnityEngine;
 public class PowerUpManager : MonoBehaviour
 {
     public Transform spawnArea;
+     public Transform spawnAreaIjo;
  public int maxPowerUpAmount;
  public int spamInterval;
  public Vector2 powerUpAreaMin;

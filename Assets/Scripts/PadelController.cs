@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PadelController : MonoBehaviour
 { 
+    
     public int speed; 
     public KeyCode upKey;
     public KeyCode downKey;
@@ -35,6 +36,11 @@ public class PadelController : MonoBehaviour
     private void MoveObject(Vector2 movement) 
     { 
        rig.velocity = movement;
-       Debug.Log($"PaddleSpeed: {speed}");
+    
     } 
+
+    public void ActivatePUSpeedUpPadel(int magnitude)
+    {
+        speed *= magnitude;
+    }
 } 
